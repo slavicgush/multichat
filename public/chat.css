@@ -1,0 +1,120 @@
+ body {
+        font-family: "Arial", sans-serif;
+        background-color: #333333;
+        font-size: 100%;
+        padding: 3%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 3%;
+        border: 2px solid #add8e6;
+        border-radius: 25%;
+      }
+
+      #msgs .timestamp {
+        display: block;
+        font-size: 0.7em;
+        color: #888;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+      #msgs .self {
+        text-align: right;
+      }
+      #msgs .other {
+        text-align: left;
+      }
+      #msgs .message {
+        max-width: 80%;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 10px;
+      }
+
+      #msgs .self .message {
+         background-color: slategray; /* #4caf50 Green background for self messages */
+        color: #fff; /* White text for self messages */
+      }
+
+      #msgs .other .message {
+        background-color: #eee; /* Light gray background for other messages */
+        color: #333; /* Dark text for other messages */
+      }
+      #msgs {
+        height: 350px;
+        /* width: 400px; */
+        overflow: auto;
+        border: 2px solid maroon;
+        background-color: #fff;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      #msgs .ticks {
+        display: inline;
+        color: #3498db; /* Blue color for the ticks */
+        margin-left: 5px; /* Adjust spacing as needed */
+      }
+      #msgs::-webkit-scrollbar {
+        width: 5px;
+      }
+      #msgs::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+      }
+      #msgs::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 8px;
+      }
+      #users {
+        width: fit-content;
+        font-size: large;
+        color: azure;
+        text-align: center;
+        display: inline-block;
+      }
+      #users div {
+        display: inline-block;
+        margin-right: 5px; /* Optional: Add some spacing between user names */
+        padding: 8px;
+        background-color: #000080;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      #logout {
+        /* width: 500px; */
+        text-align: right;
+        margin-right: 15%;
+        margin-bottom: 3%;
+      }
+      #logout a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        border: 1px solid #333;
+        padding: 1px 10px;
+        border-radius: 5px;
+        background-color: #eee;
+      }
+      input[type="text"] {
+         width: 70%; 
+        padding: 8px;
+        margin-right: 1px;
+        box-sizing: border-box;
+      }
+      button {
+        padding: 8px 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #tosend {
+        margin-top: 10px;
+        margin-left: 20%;
+      }
+      h2 {
+        margin: 0;
+        text-align: center;
+        color: #add8e6;
+      }

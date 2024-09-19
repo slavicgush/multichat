@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="chat.css" />
+    <script src="chat.js"></script>
+  </head>
+  <body>
+    <h2>Lets chat</h2>
+    <form action="" id="chatForm">
+      <div id="logout"><a href="/logout">Logout</a></div>
+      <div id="users"></div>
+      <div id="msgs"></div>
+      <label for="msg" id="user"></label>
+      <input type="hidden" id="name" value="<%=user%>" />
+      <div id="tosend">
+        <input type="text" id="msg" /> <button id="sendBtn">Send</button>
+      </div>
+    </form>
+  </body>
+</html>

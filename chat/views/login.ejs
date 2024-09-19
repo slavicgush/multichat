@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <form action="/login" method="post" id="loginForm">
+        <h2>Login</h2>
+        <div class="input-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" autofocus />
+          <span class="error" id="usernameError"></span>
+        </div>
+        <div class="input-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+          <span class="error" id="passwordError"></span>
+        </div>
+        <button type="submit" id="loginButton">
+          Login
+        </button>
+        <div class="input-group">
+          <label for="account">Don't have account?</label>
+          <a href="#" id="createOne"
+            >Create one</a
+          >
+        </div>
+      </form>
+
+      <!-- Create Account Form (Initially Hidden) -->
+      <form
+        action="/createaccount"
+        method="post"
+        id="createAccountForm"
+        style="display: none"
+      >
+        <h2>Create Account</h2>
+        <div class="input-group">
+          <label for="newUsername">New Username:</label>
+          <input type="text" id="newUsername" name="newUsername" autofocus />
+          <span class="error" id="newUsernameError"></span>
+        </div>
+        <div class="input-group">
+          <label for="newPassword">New Password:</label>
+          <input type="password" id="newPassword" name="newPassword" />
+          <span class="error" id="newPasswordError"></span>
+        </div>
+        <input type="hidden" name="formType" value="createAccount" />
+        <button
+          type="submit"
+          id="createAccount"
+        >
+          Create Account
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
